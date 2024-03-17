@@ -1,0 +1,55 @@
+<style></style>
+
+<div class="bg-[#202020] h-full flex w-full">
+  <div
+    class="w-[5rem] items-start justify-center bg-[#131313] flex px-5 gap-3 shadow-md rounded-sm transition duration-500 ease-in-out py-[2rem]"
+  >
+    <div class="flex w-10 mt-3 text-white cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g>
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M3.783 2.826L12 1l8.217 1.826a1 1 0 0 1 .783.976v9.987a6 6 0 0 1-2.672 4.992L12 23l-6.328-4.219A6 6 0 0 1 3 13.79V3.802a1 1 0 0 1 .783-.976zM12 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-4.473 5h8.946a4.5 4.5 0 0 0-8.946 0z"
+            fill="currentColor"
+          />
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="text-white px-[3rem] py-[2rem] w-full h-full flex flex-col">
+    <div class="flex gap-6 items-center">
+      <img
+        src="../assets/images/contact.jpg"
+        class="rounded-full w-28 h-28 object-cover hover:shadow-sm hover:shadow-gray-600"
+      />
+      <div class="flex flex-col">
+        <span>Safety Hub</span>
+        <span class="text-2xl font-bold">Emergency Contact</span>
+      </div>
+    </div>
+
+    <div class="h-full flex mt-[2rem] gap-6">
+      <div
+        class="w-[30%] flex flex-col gap-4 bg-[#131313] p-3 h-full rounded-lg"
+      >
+        <span class="p-3">Chat</span>
+        <ul class="flex flex-col gap-3">
+          @for (item of [1,2,3,4,5]; track $index) {
+          <li
+            class="p-3 rounded-md bg-[#202020] transition duration-500 ease-in-out cursor-pointer"
+          >
+            vkldshvn
+          </li>
+          }
+        </ul>
+      </div>
+      <div class="w-[80%]">
+        <div class="bg-gray-900 p-3">
+          <span class="">Chat</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet />
